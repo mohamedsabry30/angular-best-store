@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/best-store",
+    "public": "dist/best-store/browser",
     "ignore": [
       "firebase.json",
       "**/.*",

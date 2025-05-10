@@ -17,23 +17,23 @@ You can check out the live version here:
 
 ### Home Page
 
-![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/angular-best-store/main/screenshots/longhomepage.png)
+![App Screenshot](https://raw.githubusercontent.com/mohamedsabry30/angular-best-store/main/screenshots/longhomepage.png)
 
 ### Product Details
 
-![Product Details](https://raw.githubusercontent.com/mohamedsabry95/angular-best-store/main/screenshots/productpage.png)
+![Product Details](https://raw.githubusercontent.com/mohamedsabry30/angular-best-store/main/screenshots/productpage.png)
 
 ### Shopping Cart
 
-![Shopping Cart](https://raw.githubusercontent.com/mohamedsabry95/angular-best-store/main/screenshots/cart.png)
+![Shopping Cart](https://raw.githubusercontent.com/mohamedsabry30/angular-best-store/main/screenshots/cart.png)
 
 ### Responsive Layout
 
-![Responsive Layout](https://raw.githubusercontent.com/mohamedsabry95/angular-best-store/main/screenshots/respnsivehomepage.png)
+![Responsive Layout](https://raw.githubusercontent.com/mohamedsabry30/angular-best-store/main/screenshots/respnsivehomepage.png)
 
-![Responsive Layout](https://raw.githubusercontent.com/mohamedsabry95/angular-best-store/main/screenshots/responsivehomepage2.png)
+![Responsive Layout](https://raw.githubusercontent.com/mohamedsabry30/angular-best-store/main/screenshots/responsivehomepage2.png)
 
-![Responsive Layout](https://raw.githubusercontent.com/mohamedsabry95/angular-best-store/main/screenshots/responsivecart.png)
+![Responsive Layout](https://raw.githubusercontent.com/mohamedsabry30/angular-best-store/main/screenshots/responsivecart.png)
 
 ## About Me
 

@@ -1,0 +1,30 @@
+<div class="card shadow px-3 position-relative">
+  <a class="text-center" [routerLink]="[`/product`, product().id]">
+    <img class="card-img-top m-auto" [src]="product().image" alt="Product" />
+    <div class="card-body">
+      <h3 class="text-start card-title fs-5">{{ product().title }}</h3>
+    </div>
+  </a>
+  <div class="m-auto">
+    <p class="text-body-secondary fs-4">${{ product().price }}</p>
+  </div>
+  <div class="btn-addtocard">
+    @if (cartService.cart()[getIndex()]) {
+    <app-plus-minus [product]="product()"></app-plus-minus>
+    } @else {
+
+    <app-primary-button
+      [isDisabled]="!product().stock"
+      label="Add to cart"
+      (btnClicked)="initiateAddCart()"
+    ></app-primary-button>
+    }
+  </div>
+  <span
+    class="fw-bold fs-6 position-absolute top-0 end-0 p-1 px-3"
+    [class]="product().stock ? `text-success` : `text-danger`"
+  >
+    @if (product().stock){
+    {{ product().stock }} in stock } @else {Out of stock}
+  </span>
+</div>

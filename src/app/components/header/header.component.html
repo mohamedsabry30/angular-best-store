@@ -1,0 +1,14 @@
+<nav data-bs-theme="dark" class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="" routerLink="/">Best Store</a>
+    <div class="" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <!-- <a class="nav-link" href="#">Home</a> -->
+      </div>
+    </div>
+    <app-primary-button
+      [label]="'Cart (' + cartService.cartItems() + ')'"
+      routerLink="/cart"
+    ></app-primary-button>
+  </div>
+</nav>

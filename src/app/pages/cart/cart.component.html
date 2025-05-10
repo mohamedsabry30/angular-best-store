@@ -1,0 +1,28 @@
+<div class="container px-md-5">
+  <h1>Shopping Cart</h1>
+  @for (product of cartService.cart(); track product.id){
+  <div class="cartitem-container shadow-sm">
+    <div class="img"><img img [src]="product.image" alt="product" /></div>
+    <div class="title">{{ product.title }}</div>
+    <div class="outplusminus">
+      <app-plus-minus [product]="product"></app-plus-minus>
+    </div>
+    <div class="price">$&nbsp;{{ calcPrice(product) }}</div>
+    <div class="remove-button">
+      <button
+        (click)="cartService.removeItem(product)"
+        class="shadow-sm del-product"
+      >
+        remove
+      </button>
+    </div>
+  </div>
+  } @if (cartService.cart().length) {
+  <div class="d-flex justify-content-end">
+    <button (click)="cartService.clearCart()" class="btn btn-secondary">
+      Clear cart
+    </button>
+  </div>
+  }
+  <app-order-summary class="d-block mt-3"></app-order-summary>
+</div>

@@ -1,0 +1,32 @@
+<div class="container px-md-5 py-5 d-flex flex-column">
+  <h3>{{ currentProduct.title }}</h3>
+  <img
+    class="align-self-center my-3 shadow-sm"
+    [src]="currentProduct.image"
+    alt="Product"
+  />
+  <h5>Description</h5>
+  <p>{{ currentProduct.description }}</p>
+  @if (currentProduct.stock) { @if (cartService.cart()[getIndex()]) {
+  <div class="m-auto">
+    <p class="text-body-secondary fs-4">${{ currentProduct.price }}</p>
+  </div>
+  <app-plus-minus [product]="currentProduct"></app-plus-minus>
+  } @else {
+  <div class="m-auto">
+    <p class="text-body-secondary fs-4">${{ currentProduct.price }}</p>
+  </div>
+  <button
+    (click)="cartService.addToCart(currentProduct)"
+    class="btn btn-primary align-self-center"
+  >
+    Add to cart
+    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+  </button>
+  } } @else {
+
+  <span class="fw-bold fs-6 p-1 px-3 text-danger align-self-center"
+    >Out of stock
+  </span>
+  }
+</div>

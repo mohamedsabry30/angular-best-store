@@ -1,0 +1,15 @@
+.plus-minus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus-minus .quantity-mod {
+  cursor: pointer;
+  margin: 0 7px;
+}
+
+.plus-minus .quantitiy-input-mod {
+  width: 3rem;
+  text-align: center;
+}

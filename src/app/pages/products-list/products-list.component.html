@@ -1,0 +1,47 @@
+<app-landing></app-landing>
+<div class="container my-5">
+  <div class="dropdown my-5">
+    <p>Filter</p>
+    <button
+      class="btn btn-secondary dropdown-toggle"
+      type="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Choose category
+    </button>
+    <ul class="dropdown-menu">
+      <li>
+        <a (click)="filter(`all`)" class="dropdown-item" href="#">All</a>
+      </li>
+      <li>
+        <a (click)="filter(`men's clothing`)" class="dropdown-item" href="#"
+          >Men's clothing</a
+        >
+      </li>
+      <li>
+        <a (click)="filter(`women's clothing`)" class="dropdown-item" href="#"
+          >Women's clothing</a
+        >
+      </li>
+      <li>
+        <a (click)="filter(`jewelery`)" class="dropdown-item" href="#"
+          >Jewelery</a
+        >
+      </li>
+      <li>
+        <a (click)="filter(`electronics`)" class="dropdown-item" href="#"
+          >Electronics</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="row gx-4 gy-5">
+    @for (product of products; track product.id){
+    <app-product-card
+      [product]="product"
+      class="col-md-6 col-lg-4"
+    ></app-product-card>
+    }
+  </div>
+</div>

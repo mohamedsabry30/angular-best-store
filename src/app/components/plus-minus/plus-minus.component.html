@@ -1,0 +1,19 @@
+<div class="plus-minus">
+  <div
+    (click)="cartService.quantityMinus(product())"
+    class="quantity-mod rounded-5 rounded-top-0"
+  >
+    <i class="fa-solid fa-minus"></i>
+  </div>
+  <input
+    class="quantitiy-input-mod"
+    disabled
+    [value]="cartService.getQuantity(product())"
+  />
+  <div
+    (click)="cartService.quantityPlus(product())"
+    class="quantity-mod rounded-5 rounded-buttom-0"
+  >
+    <i class="fa-solid fa-plus"></i>
+  </div>
+</div>
